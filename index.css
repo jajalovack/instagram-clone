@@ -2,6 +2,8 @@
 {
     margin: 0;
     padding: 0;
+    font-family: 'Instagram Sans', sans-serif;
+    font-weight: 500;
 }
 
 .container
@@ -17,6 +19,16 @@
     height: 100vh;
     overflow: none;
     display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    justify-content: space-between;
+}
+
+.sidebar-top
+{
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
 }
 
 .main
@@ -25,4 +37,45 @@
     overflow-x: none;
     overflow-y: scroll;
     width: 80vw;
+}
+
+#brand-logo
+{
+    width: 10vw;
+    padding: 5px;
+    margin: 10px 5px 30px 5px;
+    max-width: 500px;
+    box-sizing: border-box;
+    display: flex;
+}
+
+.sidebar-item
+{
+    display: flex;
+    align-items: center;
+    margin-left: 5px;
+    margin-bottom: 15px;
+    font-size: 15px;
+}
+
+.sidebar-item > p
+{
+    padding: 5px;
+    margin-top: 5px;
+    margin-left: 20px;
+}
+
+.fa-solid
+{
+    font-size: 25px;
+    padding: 5px;
+}
+
+.profile-img
+{
+    padding: 0;
+    margin: 0;
+    width: 30px;
+    height: 30px;
+    border-radius: 50px;
 }
