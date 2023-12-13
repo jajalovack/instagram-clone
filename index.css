@@ -17,6 +17,11 @@ b
     overflow: hidden;
 }
 
+.topbar, .bottom-bar
+{
+    display: none;
+}
+
 .sidebar
 {
     width: 20vw;
@@ -114,6 +119,7 @@ b
     white-space: nowrap;
     width: 100%;
     box-sizing: border-box;
+    margin-top: 20px;
 }
 
 .stories::-webkit-scrollbar
@@ -143,7 +149,7 @@ b
 .next-arrow
 {
     position: absolute;
-    top: 10px;
+    top: 30px;
     right: 10px;
     padding: 8px;
     background-color: white;
@@ -212,12 +218,17 @@ b
         box-sizing: border-box;
     }
 
+    .stories
+    {
+        margin-top: 70px;
+    }
+
     .card
     {
         width: 90vw;
     }
 
-    .topbar
+    .topbar, .bottom-bar
     {
         display: flex;
         justify-content: space-between;
@@ -226,6 +237,7 @@ b
         width: 100%;
         z-index: 1;
         background-color: white;
+        align-items: center;
     }
 
     .topbar > i
@@ -238,5 +250,13 @@ b
         width: 20vh;
         margin: 10px;
         padding: 0;
+    }
+
+    .bottom-bar
+    {
+        padding: 10px;
+        top: unset;
+        bottom: 0;
+        box-sizing: border-box;
     }
 }
